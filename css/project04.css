@@ -17,7 +17,7 @@
   max-width: 1440px;
   width: 100%;
   align-items: center;
-  margin: 0 auto;
+  justify-content: space-around;
   height: 80px;
 }
 
@@ -28,11 +28,10 @@
 .headerwrap .gnb ul {
   display: flex;
   gap: 50px;
-  color: white
+  color: white;
 }
 
 .headerwrap .gnb {
-  margin: 8px 0 0 auto;
   font-size: 17px;
   font-weight: 300;
 }
@@ -42,11 +41,9 @@
   font-size: 25px;
   gap: 8px;
   color: #fff;
-  margin: 10px 0 0 auto;
 }
 
 /* 여기까지 header */
-
 
 .header.active {
   border-bottom: 1px solid #ddd;
@@ -62,10 +59,7 @@
   color: black;
 }
 
-
 /* 여기까지 header.active */
-
-
 
 .mainviual {
   height: 100vh;
@@ -77,9 +71,7 @@
   object-fit: cover;
 }
 
-
 /* 여기까지 mainviual */
-
 
 .Business {
   max-width: 1440px;
@@ -93,7 +85,7 @@
   margin-bottom: 50px;
 }
 
-.Business_title>h3 {
+.Business_title > h3 {
   font-size: 70px;
   font-family: "Titillium";
   font-weight: 900;
@@ -131,7 +123,7 @@
   width: 100%;
 }
 
-.Business_icon p>b {
+.Business_icon p > b {
   font-size: 20px;
   font-weight: 600;
   display: block;
@@ -156,9 +148,7 @@
   transition: 0.5s;
 }
 
-
 /* 여기까지 Business */
-
 
 .sec_slide .main_slide figure {
   height: 650px;
@@ -214,9 +204,7 @@
   width: 100%;
 }
 
-
 /* 여기까지 sec_slide */
-
 
 .sec_slide .tab {
   width: 100%;
@@ -274,13 +262,11 @@
   left: 0px;
 }
 
-
 /* 여기까지 sec_slide tab */
-
 
 .sub_con {
   width: 100%;
-  padding: 130px 0;
+  padding: 130px 15px;
 
   display: flex;
   justify-content: center;
@@ -341,7 +327,6 @@
 .sub_con .content .con_inner li:hover {
   color: #002e7b;
   font-weight: 700;
-
 }
 
 .sub_con .content .con_inner li:hover:before {
@@ -372,17 +357,28 @@
   border-radius: 10px;
 }
 
-
 /* 여기까지 sub_con */
-
 
 .main_map {
   padding: 130px 0;
   width: 100%;
-}
-
-.main_map .top .map_box {
   max-width: 1440px;
   margin: 0 auto;
+}
+
+.main_map .map_inner {
+  display: flex;
+  max-width: 1440px;
   padding: 0 15px;
+  justify-content: center;
+  gap: 45px;
+  text-align: center;
+}
+
+.main_map .map_inner strong {
+  font-size: 22px;
+  font-weight: 300;
+  color: #222;
+  display: inline-block;
+  padding-bottom: 30px;
 }
