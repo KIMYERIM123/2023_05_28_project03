@@ -69,7 +69,7 @@
   margin-bottom: 50px;
 }
 
-.section_title > h3 {
+.section_title>h3 {
   font-size: 50px;
   font-family: "Titillium";
   font-weight: 900;
@@ -103,7 +103,7 @@
   width: 100%;
 }
 
-.section_icon p > b {
+.section_icon p>b {
   font-size: 20px;
   font-weight: 500;
   display: block;
@@ -123,6 +123,7 @@
 .section_icon ul li a:hover img {
   transform: translateY(-20px);
 }
+
 .section_icon ul li a img {
   transition: 0.5s;
 }
