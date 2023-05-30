@@ -15,10 +15,20 @@ $(function () {
     arrows: false,
   });
 
-  $(".section_2 .dots li").on("mouseenter", function () {
+  $(".sec_slide .dots li").on("mouseenter", function () {
     // 내가 클릭한 요소의 번호를 알려줘
     let idx = $(this).index();
     console.log(idx);
     $(".main_slide").slick("slickGoTo", idx, true);
   });
+
+
+  $(window).on('scroll', function () {
+    if ($(window).scrollTop()) {
+      $('.header').addClass('active');
+    } else {
+      $('.header').removeClass('active');
+    }
+  });
+
 });

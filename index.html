@@ -20,7 +20,7 @@
     <header class="header">
       <div class="headerwrap">
         <h1>
-          <a href="#!"><img src="./img/logo01.png" alt="" /></a>
+          <a href="#!"><img src="./img/logo02.png" alt="" /></a>
         </h1>
         <div class="gnb">
           <ul>
@@ -38,6 +38,9 @@
             </a>
             <a href="#!">
               <li>인재채용</li>
+            </a>
+            <a href="#!">
+              <li>회사소개</li>
             </a>
           </ul>
         </div>
@@ -62,8 +65,8 @@
       </video>
     </section>
 
-    <div class="section_1">
-      <div class="section_title">
+    <section class="Business">
+      <div class="Business_title">
         <h3>BANDO BUSINESS</h3>
         <p>
           새로운 도전으로 대한민국 건설을 선도하는 반도건설의 사업을
@@ -71,7 +74,7 @@
         </p>
       </div>
 
-      <div class="section_icon">
+      <div class="Business_icon">
         <ul>
           <li>
             <a href="#!">
@@ -154,9 +157,9 @@
           </li>
         </ul>
       </div>
-    </div>
+    </section>
 
-    <div class="section_2">
+    <section class="sec_slide">
       <div class="main_slide">
         <figure class="itm01">
           <div class="slogan">
@@ -268,9 +271,9 @@
           </li>
         </ul>
       </div>
-    </div>
+    </section>
 
-    <div class="section_3">
+    <section class="sub_con">
       <div class="content">
         <div class="con_tit">
           <h4>BANDO NEWS</h4>
@@ -366,7 +369,62 @@
           </li>
         </ul>
       </div>
-    </div>
+    </section>
+
+    <section class="main_map">
+
+      <div class="top">
+        <div class="map_box">
+
+          <!-- * 카카오맵 - 지도퍼가기 -->
+          <!-- 1. 지도 노드 -->
+          <div id="daumRoughmapContainer1685436020428" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+          <!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+          <script charset="UTF-8" class="daum_roughmap_loader_script"
+            src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+          <!-- 3. 실행 스크립트 -->
+          <script charset="UTF-8">
+            new daum.roughmap.Lander({
+              "timestamp": "1685436020428",
+              "key": "2ey3y",
+              "mapWidth": "1440",
+              "mapHeight": "500"
+            }).render();
+          </script>
+
+        </div>
+      </div>
+
+      <div class="bottom">
+        <ul class="bottom_inner">
+          <li>
+            <strong>주소</strong>
+            <p>부산광역시 중구 태종로 14-1 (남포동 1가 72-2) 반도빌딩</p>
+          </li>
+
+          <li>
+            <strong>전화번호</strong>
+            <p>고객센터 : 1800-0015</p>
+          </li>
+
+          <li>
+            <strong>주소</strong>
+            <p>지하철 : 2호선 1호선 남포역 6번
+              <br />
+              버스 : 8, 30, 66, 88, 113, 186, 190 번
+              <br />
+              자동차 : 옛시청교차로에서 여도대교 방면 좌회전
+            </p>
+          </li>
+        </ul>
+        <div class="map_icon"></div>
+      </div>
+    </section>
 
     <footer class="footer"></footer>
   </div>
