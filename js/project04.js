@@ -22,13 +22,19 @@ $(function () {
     $(".main_slide").slick("slickGoTo", idx, true);
   });
 
-
-  $(window).on('scroll', function () {
+  $(window).on("scroll", function () {
     if ($(window).scrollTop()) {
-      $('.header').addClass('active');
+      $(".header").addClass("active");
     } else {
-      $('.header').removeClass('active');
+      $(".header").removeClass("active");
     }
   });
 
+  $(".mainviual .pause").on("click", function () {
+    $(".mainviual video").trigger("pause");
+  });
+
+  $(".mainviual .play").on("click", function () {
+    $(".mainviual video").trigger("play");
+  });
 });

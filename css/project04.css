@@ -18,8 +18,9 @@
   width: 100%;
   align-items: center;
   justify-content: space-around;
-  height: 80px;
+  height: 60px;
   margin: 0 auto;
+  padding: 0 40px;
 }
 
 .headerwrap h1 {
@@ -30,13 +31,10 @@
   width: 120px;
 }
 
-.headerwrap .gnb ul {
+.headerwrap .gnb {
   display: flex;
   gap: 50px;
   color: white;
-}
-
-.headerwrap .gnb {
   font-size: 17px;
   font-weight: 300;
 }
@@ -55,7 +53,7 @@
   border-bottom: 1px solid #ddd;
 }
 
-.header.active .headerwrap .gnb ul {
+.header.active .headerwrap .gnb {
   color: black;
   font-size: 17px;
   font-weight: 400;
@@ -91,7 +89,7 @@
   margin-bottom: 50px;
 }
 
-.Business_title>h3 {
+.Business_title > h3 {
   font-size: 70px;
   font-family: "Titillium";
   font-weight: 900;
@@ -129,7 +127,7 @@
   width: 100%;
 }
 
-.Business_icon p>b {
+.Business_icon p > b {
   font-size: 20px;
   font-weight: 600;
   display: block;
@@ -387,4 +385,164 @@
   color: #222;
   display: inline-block;
   padding-bottom: 30px;
+}
+
+/* 여기까지 main_map */
+
+.footer {
+  background: #131c32;
+  padding: 40px 0;
+}
+
+.footer .footer_wrap {
+  display: flex;
+  width: 1400px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.footer .footer_wrap .copy {
+  color: #ccc;
+  flex-grow: 1;
+}
+
+.footer .footer_wrap .copy p {
+  margin-bottom: 15px;
+}
+
+.footer .footer_wrap .copy p:last-child {
+  margin-bottom: 0;
+  font-size: 13px;
+}
+
+.footer .footer_wrap .copy ul {
+  display: flex;
+  margin-bottom: 15px;
+  gap: 30px;
+  font-size: 13px;
+}
+
+.footer .footer_wrap .copy ul li {
+  position: relative;
+}
+
+.footer .footer_wrap .copy ul li ~ li::after {
+  content: "";
+
+  background: #ccc;
+  width: 1px;
+  height: 10px;
+
+  position: absolute;
+  top: 50%;
+  left: -30%;
+  transform: translate(0, -50%);
+}
+
+.footer .footer_wrap .copy ul li:first-child {
+  font-weight: 800;
+}
+
+.footer .footer_wrap .copy span {
+  display: block;
+  color: rgba(225, 225, 225, 0.3);
+  margin-top: 5px;
+}
+
+.footer .footer_wrap .footer_sec {
+  text-align: right;
+  height: 100%;
+  margin: auto 0 0 0;
+}
+
+.footer .footer_wrap .footer_sec ul {
+  display: flex;
+  color: #ccc;
+  gap: 30px;
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+
+footer .footer_wrap .footer_sec ul li {
+  position: relative;
+}
+
+footer .footer_wrap .footer_sec ul li ~ li::after {
+  content: "";
+
+  background: #ccc;
+  width: 1px;
+  height: 10px;
+
+  position: absolute;
+  top: 50%;
+  left: -30%;
+  transform: translate(0, -50%);
+}
+
+.footer .footer_wrap .footer_sec p {
+  color: #fff;
+  font-size: 13px;
+}
+
+.footer .footer_wrap .footer_sec p:last-child {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+/* 여기까지 footer */
+
+.mainviual .scroll > strong {
+  display: inline-block;
+  color: #ddd;
+}
+
+.mainviual {
+  position: relative;
+}
+
+.mainviual .scroll {
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+}
+
+.mainviual .scroll i {
+  font-size: 40px;
+  color: #ddd;
+
+  animation: wheel 0.5s infinite;
+}
+
+@keyframes wheel {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(0, 5px);
+  }
+}
+
+/* 여기까지 scroll down */
+
+.mainviual .controll .play {
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 30px;
+  color: #fff;
+  margin: 0 10px 0 0;
+  padding: 5px;
+}
+
+.mainviual .controll .pause {
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 30px;
+  color: #fff;
+  padding: 5px;
+}
+
+.mainviual .controll {
+  position: absolute;
+  bottom: 30px;
+  left: 38px;
 }
