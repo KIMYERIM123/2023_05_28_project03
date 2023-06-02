@@ -13,6 +13,7 @@ $(function () {
   $(".main_slide").slick({
     autoplay: true,
     arrows: false,
+    fade: true
   });
 
   $(".sec_slide .dots li").on("mouseenter", function () {
@@ -37,4 +38,14 @@ $(function () {
   $(".mainviual .play").on("click", function () {
     $(".mainviual video").trigger("play");
   });
+
+  $('.scroll').on('click', function (e) {
+    e.preventDefault();
+    const st = $(this.hash).offset().top;
+    console.log(st);
+    $('html, body').animate({ scrollTop: 700 }, 600);
+  });
+
+
+
 });

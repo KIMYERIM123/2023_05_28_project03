@@ -18,7 +18,7 @@
   width: 100%;
   align-items: center;
   justify-content: space-around;
-  height: 60px;
+  height: 90px;
   margin: 0 auto;
   padding: 0 40px;
 }
@@ -89,7 +89,7 @@
   margin-bottom: 50px;
 }
 
-.Business_title > h3 {
+.Business_title>h3 {
   font-size: 70px;
   font-family: "Titillium";
   font-weight: 900;
@@ -127,7 +127,7 @@
   width: 100%;
 }
 
-.Business_icon p > b {
+.Business_icon p>b {
   font-size: 20px;
   font-weight: 600;
   display: block;
@@ -426,7 +426,7 @@
   position: relative;
 }
 
-.footer .footer_wrap .copy ul li ~ li::after {
+.footer .footer_wrap .copy ul li~li::after {
   content: "";
 
   background: #ccc;
@@ -467,7 +467,7 @@ footer .footer_wrap .footer_sec ul li {
   position: relative;
 }
 
-footer .footer_wrap .footer_sec ul li ~ li::after {
+footer .footer_wrap .footer_sec ul li~li::after {
   content: "";
 
   background: #ccc;
@@ -492,7 +492,7 @@ footer .footer_wrap .footer_sec ul li ~ li::after {
 
 /* 여기까지 footer */
 
-.mainviual .scroll > strong {
+.mainviual .scroll>strong {
   display: inline-block;
   color: #ddd;
 }
@@ -503,8 +503,9 @@ footer .footer_wrap .footer_sec ul li ~ li::after {
 
 .mainviual .scroll {
   position: absolute;
-  bottom: 30px;
-  right: 50px;
+  bottom: 50px;
+  right: 50%;
+  transform: translate(40%, 0);
 }
 
 .mainviual .scroll i {
@@ -532,6 +533,7 @@ footer .footer_wrap .footer_sec ul li ~ li::after {
   color: #fff;
   margin: 0 10px 0 0;
   padding: 5px;
+  border-radius: 10px;
 }
 
 .mainviual .controll .pause {
@@ -539,10 +541,14 @@ footer .footer_wrap .footer_sec ul li ~ li::after {
   font-size: 30px;
   color: #fff;
   padding: 5px;
+  border-radius: 10px;
+
 }
 
 .mainviual .controll {
   position: absolute;
-  bottom: 30px;
+  bottom: 40px;
   left: 38px;
 }
+
+/* 여기까지 video controll */
